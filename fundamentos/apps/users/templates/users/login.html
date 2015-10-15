@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="contenedor">
+
+		<h2 class="login__registro">
+			Log in
+		</h2>
+		<section class="login__registro__datos">
+			<form method="POST">
+				{% csrf_token %}
+				<div class="login__registro__datos__ingresar">
+					{{ form.username }}
+					{{ form.username.errors }}
+				</div>
+				<div class="login__registro__datos__ingresar">
+					{{ form.password }}
+					{{ form.password.errors }}
+				</div>
+				<input type="submit" value="Ingresar" class="login__registro__datos__boton">
+			</form>
+		</section>
+  	</div>
+{% endblock content %}
+
+

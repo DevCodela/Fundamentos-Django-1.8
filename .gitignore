@@ -1,0 +1,4 @@
+fundamentos/apps/main/migrations/*
+fundamentos/apps/users/migrations/*
+
+db.sqlite3

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block styles %}
+	{% load static from staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock styles %}
+
+{% block content %}
+	{{ block.super }}
+	<h1>Este es el template hijo</h1>
+	
+{% endblock content %}
